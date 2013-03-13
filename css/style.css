@@ -178,11 +178,16 @@ nav ul.sort li a.active{
 /*         STUDENT LIST          */
 /*-------------------------------*/
 
-.students ul li{
+.students{
+  margin-bottom: 50px;
+}
+
+.students ul{
   list-style: none;
-  width: 11.667%;
+  width: 11.111%;
   float: left;
-  font-size: 12px
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 /*-------------------------------*/
