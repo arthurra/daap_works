@@ -1,7 +1,7 @@
 *{
   font-family: "Lato",sans-serif;
   font-style: normal;
-  font-weight: 400;
+  coor: #404041;
 }
 
 *{
@@ -13,14 +13,17 @@ ul{
 }
 
 a{
-  color: black !important;
+  color: #404041 !important;
 }
 
 /*-------------------------------*/
 /*             TYPE              */
 /*-------------------------------*/
 
-
+h4{
+  font-size: 14pt;
+  font-weight: 900;
+}
 
 /*-------------------------------*/
 /*            HEADER             */
@@ -84,6 +87,17 @@ a{
 /*-------------------------------*/
 /*          NAVIGATION           */
 /*-------------------------------*/
+
+.tabs{
+  padding: 15px 0;
+  border-bottom: 1px solid #58595b;
+}
+
+.tabs h4{
+  display: inline-block;
+  margin-right: 30px;
+}
+
 nav .links{
   display: inline-block;
   width: 70%;
