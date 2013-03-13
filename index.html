@@ -25,8 +25,7 @@
 
 </head>
   <body>
-    <div class="header row">
-      <h2> some tagline to go below the header image </h2>
+    <div class="header">
       <div id="kaleidoscope">
         <img id="ring1" alt="ring" src="images/ring/ring_01.png"/>
         <img id="ring2" alt="ring" src="images/ring/ring_02.png"/>
@@ -43,20 +42,25 @@
         <img id="ring13" alt="ring" src="images/ring/ring_13.png"/>
         <img id="ring14" alt="ring" src="images/ring/ring_14.png"/>
       </div>
-      <ul>
-        <li>whenRyan is super silly</li>
-        <li> opens april 23 2013 5-9pm </li>
-        <li> opening reception 5-6pm </li>
-        <li> open april 24 - 27 9-9pm </li>
-        <li> free admission and snacks </li>
-      </ul>
-      <ul>
-        <li>where</li>
-        <li> DAAP Aronoff building </li>
-        <li> 24310 Clifton Ave. </li>
-        <li> Cincinnati, OH 45219 </li>
-        <li><a href="#"> map and directions </a></li>
-      </ul>
+      <div class="row">
+        <h1> GRCD 2013 </h1>
+        <h2> DAAPWORKS </h2>
+        <h3> A WEDDING WITH 62 BRIDES </h3>
+        <ul class="when">
+          <li><p> when</p></li>
+          <li><p> opens april 23 2013 5-9pm </p></li>
+          <li><p> opening reception 5-6pm </p></li>
+          <li><p> open april 24 - 27 9-9pm </p></li>
+          <li><p> free admission and snacks </p></li>
+        </ul>
+        <ul class="where">
+          <li><p> where </p></li>
+          <li><p> DAAP Aronoff building </p></li>
+          <li><p> 24310 Clifton Ave. </p></li>
+          <li><p> Cincinnati, OH 45219 </p></li>
+          <li><p><a href="https://maps.google.com/maps?ie=UTF8&cid=4364812893229701306&q=DAAP+-+University+of+Cincinnati&iwloc=A&gl=US&hl=en" target="_blank"> map and directions </a></p></li>
+        </ul>
+      </div>
     </div>
     <nav class="row">
       <ul class="links">
@@ -249,10 +253,10 @@
         var center_y = (offset.top) + (img1.height()/2);
         var mouse_x = evt.pageX; var mouse_y = evt.pageY;
         var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
-        var degree = (radians * (180 / Math.PI) * -1) + 90;
-        var degree2 = (radians * (180 / Math.PI)); 
-        var degree3 = (radians * (180 / Math.PI) * -1) + 180;
-        var degree4 = (radians * (180 / Math.PI)) + 180; 
+        var degree = (radians * (180 / Math.PI) * -0.5) + 90;
+        var degree2 = (radians * (180 / Math.PI) * 0.25); 
+        var degree3 = (radians * (180 / Math.PI) * -0.5) + 180;
+        var degree4 = (radians * (180 / Math.PI) * 0.25) + 180; 
         var degree5 = (radians * (180 / Math.PI) * -1) - 90;
 
         img1.css('-moz-transform', 'rotate('+degree+'deg)');
