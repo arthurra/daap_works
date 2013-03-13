@@ -34,7 +34,6 @@ h4{
   position: relative;
   overflow: hidden;
   padding-top: 100px;
-  border-bottom: 3px solid black;
 }
 
 .header *{
@@ -88,37 +87,92 @@ h4{
 /*          NAVIGATION           */
 /*-------------------------------*/
 
+#sticky{
+  position: relative;
+  background: #fff;
+  border-top: 3px solid #404041;
+}
+
 .tabs{
-  padding: 15px 0;
+  padding: 25px 0 20px;
   border-bottom: 1px solid #58595b;
 }
 
 .tabs h4{
   display: inline-block;
+  margin: 0;
   margin-right: 30px;
 }
 
-nav .links{
-  display: inline-block;
-  width: 70%;
+.tabs h4 a{
+  position: relative;
 }
 
-nav .sort{
+.tabs h4 a.active::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border: solid 10px;
+  border-color: transparent transparent #404041 transparent;
+}
+.tabs h4 a.active::after{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 26px;
+  left: 40%;
+  width: 0;
+  height: 0;
+  border: solid 10px;
+  border-color: transparent transparent #fff transparent;
+}
+
+nav.filter{
+  padding: 15px 0;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 11pt;
+  max-width: 68.25em;
+}
+
+nav ul.links{
+  display: inline-block;
+  width: 74.5%;
+  margin: 0;
+}
+
+nav ul.sort{
   display: inline-block;
   width: 25%;
+  margin: 0;
 }
 
-nav .links li{
+nav ul.links li{
   list-style: none;
   width: 20%;
   float: left;
 }
 
-nav .sort li{
+nav ul.sort li{
   list-style: none;
   float: right;
   margin-left: 0.5em; 
 }
+
+nav ul.sort li a.active{
+  font-weight: 900;
+}
+
+.fixed{
+  position: fixed !important;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+
+
 
 /*-------------------------------*/
 /*         STUDENT LIST          */

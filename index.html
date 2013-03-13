@@ -21,26 +21,28 @@
 
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
+   
+
   
 
 </head>
   <body>
     <header class="header"><!--CHANGE CLASS STYLES-->
       <div id="kaleidoscope">
-        <img id="ring1" alt="ring" src="images/ring/ring_01.png"/>
-        <img id="ring2" alt="ring" src="images/ring/ring_02.png"/>
-        <img id="ring3" alt="ring" src="images/ring/ring_03.png"/>
-        <img id="ring4" alt="ring" src="images/ring/ring_04.png"/>
-        <img id="ring5" alt="ring" src="images/ring/ring_05.png"/>
-        <img id="ring6" alt="ring" src="images/ring/ring_06.png"/>
-        <img id="ring7" alt="ring" src="images/ring/ring_07.png"/>
-        <img id="ring8" alt="ring" src="images/ring/ring_08.png"/>
-        <img id="ring9" alt="ring" src="images/ring/ring_09.png"/>
-        <img id="ring10" alt="ring" src="images/ring/ring_10.png"/>
-        <img id="ring11" alt="ring" src="images/ring/ring_11.png"/>
-        <img id="ring12" alt="ring" src="images/ring/ring_12.png"/>
-        <img id="ring13" alt="ring" src="images/ring/ring_13.png"/>
-        <img id="ring14" alt="ring" src="images/ring/ring_14.png"/>
+        <img id="ring1" alt="ring" src="images/ring/ring_01.gif"/>
+        <img id="ring2" alt="ring" src="images/ring/ring_02.gif"/>
+        <img id="ring3" alt="ring" src="images/ring/ring_03.gif"/>
+        <img id="ring4" alt="ring" src="images/ring/ring_04.gif"/>
+        <img id="ring5" alt="ring" src="images/ring/ring_05.gif"/>
+        <img id="ring6" alt="ring" src="images/ring/ring_06.gif"/>
+        <img id="ring7" alt="ring" src="images/ring/ring_07.gif"/>
+        <img id="ring8" alt="ring" src="images/ring/ring_08.gif"/>
+        <img id="ring9" alt="ring" src="images/ring/ring_09.gif"/>
+        <img id="ring10" alt="ring" src="images/ring/ring_10.gif"/>
+        <img id="ring11" alt="ring" src="images/ring/ring_11.gif"/>
+        <img id="ring12" alt="ring" src="images/ring/ring_12.gif"/>
+        <img id="ring13" alt="ring" src="images/ring/ring_13.gif"/>
+        <img id="ring14" alt="ring" src="images/ring/ring_14.gif"/>
       </div>
       <div class="row">
         <h1> GRCD 2013 </h1>
@@ -51,7 +53,7 @@
           <li><p> opens april 23 2013 5-9pm </p></li>
           <li><p> opening reception 5-6pm </p></li>
           <li><p> open april 24 - 27 9-9pm </p></li>
-          <li><p> free admission and snacks </p></li>
+          <li><p> free admission and snacks! </p></li>
         </ul>
         <ul class="where">
           <li><p> where </p></li>
@@ -62,15 +64,16 @@
         </ul>
       </div>
     </header>
-    <div class="sticky">
+    <div id="sticky">
         <nav class="tabs row">
-          <h4><a href="#"> PROJECTS </a></h4>
+          <h4><a href="#" class="active"> PROJECTS </a></h4>
           <h4><a href="#"> YEARBOOK </a></h4>
+          <h4><a href="#"> ABOUT US </a></h4>
         </nav>
 
-        <nav class="row">
+        <nav class="filter row">
           <ul class="links">
-            <li><a href="#"> 62 all </a></li>
+            <!-- <li><a href="#"> 62 all </a></li> -->
             <li><a href="#"> 08 motion </a></li>
             <li><a href="#"> 36 print </a></li>
             <li><a href="#"> 22 interaction </a></li>
@@ -78,7 +81,7 @@
           <ul class="sort">
             <li><a href="#"> browse </a></li>
             <li> | </li>
-            <li><a href="#"> grid </a></li>
+            <li><a href="#" class="active"> grid </a></li>
           </ul>
         </nav>
     </div>
@@ -241,7 +244,7 @@
     </div>
   </body>
 
-  <!--<script type="text/javascript">
+  <!-- <script type="text/javascript">
     var img1 = $('#ring1');
     var img2 = $('#ring2');
     var img3 = $('#ring3');
@@ -318,6 +321,36 @@
       }
       $(document).mousemove(mouse);
     }
-  </script>-->
+  </script> -->
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+ 
+      //Calculate the height of <header>
+      //Use outerHeight() instead of height() if have padding
+      var aboveHeight = $('.header').outerHeight();
+
+      //when scroll
+      $(window).scroll(function(){
+
+        //if scrolled down more than the header’s height
+        if ($(window).scrollTop() > aboveHeight){
+
+        // if yes, add “fixed” class to the <nav>
+        // add padding top to the #content 
+        //(value is same as the height of the nav)
+        $('#sticky').addClass('fixed').css('top','0').next()
+        .css('padding-top','128px');
+
+        } else {
+
+        // when scroll up or less than aboveHeight,
+        //remove the “fixed” class, and the padding-top
+        $('#sticky').removeClass('fixed').next()
+        .css('padding-top','0');
+        }
+      });
+    });
+   </script>
 
 </html>
