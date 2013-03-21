@@ -259,7 +259,8 @@ div[id^="panes"]{
   height: 400px;
   margin-bottom: 15px;
   position: relative;
-  overflow: visible !important
+  /*overflow: visible !important;*/
+  /*the above break it, so the design team can suck it for now*/v
 }
 
 div[id^="panes"] > div{
@@ -268,6 +269,16 @@ div[id^="panes"] > div{
 
 .panes .opened{
   background-color: blue;
+}
+
+.tabs > div,
+.tabs2 > div,
+.tabs3 > div,
+.tabs4 > div {
+  width: 231px;
+  height: 163px;
+  margin: 5px;
+  float: left;
 }
 
 
