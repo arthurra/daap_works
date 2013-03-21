@@ -8,8 +8,16 @@
   box-sizing: border-box;
 }
 
-ul{
+
+ul {
   list-style: none;
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+li {
+  display: inline;
 }
 
 a{
@@ -113,13 +121,12 @@ p{
   border-top: 3px solid #404041;
 }
 
-.tabs{
+.btns{
   position: relative;
   padding: 25px 0 20px;
-  border-bottom: 1px solid #58595b;
 }
 
-.tabs::before{
+.btns::before{
   content: url("../images/nav-kal.png");
   display: block;
   height: 35px;
@@ -129,17 +136,17 @@ p{
   left: -75px;
 }
 
-.tabs h4{
+.btns h4{
   display: inline-block;
   margin: 0;
   margin-right: 30px;
 }
 
-.tabs h4 a{
+.btns h4 a{
   position: relative;
 }
 
-.tabs h4 a.active::before{
+.btns h4 a.active::before{
   content: "";
   display: block;
   position: absolute;
@@ -150,7 +157,7 @@ p{
   border: solid 10px;
   border-color: transparent transparent #404041 transparent;
 }
-.tabs h4 a.active::after{
+.btnss h4 a.active::after{
   content: "";
   display: block;
   position: absolute;
@@ -225,12 +232,32 @@ nav ul.sort li a.active{
 /*          GRID VIEW            */
 /*-------------------------------*/
 
-.project-thumb{
+
+.tab {
   height: 75px;
   width: 100px;
   margin: 0 15px 15px 0;
   float: left;
   background-color: gray;
+
+}
+
+.tab2 {
+  height: 75px;
+  width: 100px;
+  margin: 0 15px 15px 0;
+  float: left;
+  background-color: gray;
+
+}
+
+.tab3 {
+  height: 75px;
+  width: 100px;
+  margin: 0 15px 15px 0;
+  float: left;
+  background-color: gray;
+
 }
 
 .project-grid ul:hover li{
@@ -241,6 +268,101 @@ nav ul.sort li a.active{
 .project-grid ul li:hover{
   opacity: 1;
 }
+
+
+#panes1 {
+
+height: 400px;
+width: 90%;
+margin-bottom: 15px;
+background-color: grey;
+color: black;
+position: relative;
+}
+
+#panes2 {
+
+height: 400px;
+width: 90%;
+margin-bottom: 15px;
+background-color: grey;
+color: black;
+position: relative;
+}
+
+#panes3 {
+
+height: 400px;
+width: 90%;
+margin-bottom: 15px;
+background-color: grey;
+color: black;
+position: relative;
+}
+
+#panes4 {
+
+height: 400px;
+width: 90%;
+margin-bottom: 15px;
+background-color: grey;
+color: black;
+position: relative;
+}
+
+#panes1 div{
+position: absolute;
+}
+
+#panes2 div{
+position: absolute;
+}
+
+#panes3 div{
+position: absolute;
+}
+
+#panes4 div{
+position: absolute;
+}
+
+
+.panes .opened{
+  background-color: blue;
+}
+
+
+.tabs div{
+width: 231px;
+height: 163px;
+margin: 5px;
+float: left;
+}
+
+.tabs2 div{
+width: 231px;
+height: 163px;
+margin: 5px;
+float: left;
+}
+
+.tabs3 div{
+width: 231px;
+height: 163px;
+margin: 5px;
+float: left;
+}
+
+.tabs4 div{
+width: 231px;
+height: 163px;
+margin: 5px;
+float: left;
+}
+
+
+
+
 
 
 /*-------------------------------*/
@@ -277,4 +399,3 @@ nav ul.sort li a.active{
 .project-browse h3{
   margin: 20px 0;
 }
-
