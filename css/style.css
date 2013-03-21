@@ -1,13 +1,12 @@
 *{
-  font-family: "Lato",sans-serif !important;
+  font-family: "Lato", Helvetica Neue, sans-serif !important;
   font-style: normal;
-  color: #404041;
+  color: #404041 !important;
 }
 
 *{
   box-sizing: border-box;
 }
-
 
 ul {
   list-style: none;
@@ -15,7 +14,6 @@ ul {
   padding: 0px;
   
 }
-
 
 a{
   color: #404041 !important;
@@ -241,126 +239,36 @@ nav ul.sort li a.active{
   margin: 0 15px 15px 0;
   display: inline-block;
   background-color: gray;
-
 }
 
-.tab2 {
-  height: 75px;
-  width: 100px;
-  margin: 0 15px 15px 0;
-  display: inline-block;
-  background-color: gray;
-
-}
-
-.tab3 {
-  height: 75px;
-  width: 100px;
-  margin: 0 15px 15px 0;
-  display: inline-block;
-  background-color: gray;
-
-}
-
-.project-grid ul:hover li{
-  opacity: 0.5;
+.project-grid li{
   -webkit-transition: opacity 0.3s;
+}
+
+.project-grid:hover li{
+  opacity: 0.5;
 }
 
 .project-grid ul li:hover{
   opacity: 1;
 }
 
-
-#panes1 {
-max-width: 100%;
-width: 1120px;
-margin-bottom: 15px;
-position: relative;
-overflow: visible !important
+div[id^="panes"]{
+  max-width: 100%;
+  width: 1150px;
+  height: 400px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: visible !important
 }
 
-#panes2 {
-
-height: 400px;
-width: 90%;
-margin-bottom: 15px;
-background-color: grey;
-color: black;
-position: relative;
+div[id^="panes"] > div{
+  position: absolute;
 }
-
-#panes3 {
-
-height: 400px;
-width: 90%;
-margin-bottom: 15px;
-background-color: grey;
-color: black;
-position: relative;
-}
-
-#panes4 {
-
-height: 400px;
-width: 90%;
-margin-bottom: 15px;
-background-color: grey;
-color: black;
-position: relative;
-}
-
-
-
-#panes2 div{
-position: absolute;
-}
-
-#panes3 div{
-position: absolute;
-}
-
-#panes4 div{
-position: absolute;
-}
-
 
 .panes .opened{
   background-color: blue;
 }
-
-
-.tabs div{
-width: 231px;
-height: 163px;
-margin: 5px;
-float: left;
-}
-
-.tabs2 div{
-width: 231px;
-height: 163px;
-margin: 5px;
-float: left;
-}
-
-.tabs3 div{
-width: 231px;
-height: 163px;
-margin: 5px;
-float: left;
-}
-
-.tabs4 div{
-width: 231px;
-height: 163px;
-margin: 5px;
-float: left;
-}
-
-
-
-
 
 
 /*-------------------------------*/
@@ -376,7 +284,7 @@ float: left;
 .project-browse.row{
   max-width: 115%;
   width: 1150px;
-  position: relative;
+  position: absolute;
   left: -120px;
 }
 
