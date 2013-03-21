@@ -1,3 +1,6 @@
+/*-------------------------------*/
+/*             =GLOBAL           */
+/*-------------------------------*/
 *{
   font-family: "Lato", Helvetica Neue, sans-serif !important;
   font-style: normal;
@@ -20,7 +23,7 @@ a{
 }
 
 /*-------------------------------*/
-/*             TYPE              */
+/*            =TYPE              */
 /*-------------------------------*/
 
 h1{
@@ -49,7 +52,7 @@ p{
 }
 
 /*-------------------------------*/
-/*            HEADER             */
+/*           =HEADER             */
 /*-------------------------------*/
 
 .header{
@@ -59,41 +62,41 @@ p{
   padding-top: 100px;
 }
 
-.header *{
-  font-family: "Lato", Helvetica Neue, sans-serif !important;
-  text-transform: uppercase;
-}
+  .header *{
+    font-family: "Lato", Helvetica Neue, sans-serif !important;
+    text-transform: uppercase;
+  }
 
-.header h1{
-  font-weight: 900;
-  font-size: 30pt;
-  margin-bottom: 0;
-}
+  .header h1{
+    font-weight: 900;
+    font-size: 30pt;
+    margin-bottom: 0;
+  }
 
-.header h2{
-  font-weight: 700;
-  font-size: 20pt;
-  margin: -15px 0 0;
-}
+  .header h2{
+    font-weight: 700;
+    font-size: 20pt;
+    margin: -15px 0 0;
+  }
 
-.header h3{
-  font-weight: 400;
-  font-size: 12pt;
-  font-style: italic;
-  margin: 30px 0;
-}
+  .header h3{
+    font-weight: 400;
+    font-size: 12pt;
+    font-style: italic;
+    margin: 30px 0;
+  }
 
-.header p{
-  font-size: 8pt;
-  margin: 0;
-}
+  .header p{
+    font-size: 8pt;
+    margin: 0;
+  }
 
-.header ul{
-  margin-bottom: 1.25em;
-}
+  .header ul{
+    margin-bottom: 1.25em;
+  }
 
 /*-------------------------------*/
-/*          LOGO MARK            */
+/*         =LOGO MARK            */
 /*-------------------------------*/
 
 #kaleidoscope{
@@ -104,14 +107,14 @@ p{
   width: 750px;
 }
 
-#kaleidoscope img{
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+  #kaleidoscope img{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 /*-------------------------------*/
-/*          NAVIGATION           */
+/*         =NAVIGATION           */
 /*-------------------------------*/
 
 #sticky{
@@ -126,48 +129,48 @@ p{
   border-bottom: 1px solid #58595b;
 }
 
-.btns::before{
-  content: url("../images/nav-kal.png");
-  display: block;
-  height: 35px;
-  width: 35px;
-  position: absolute;
-  top: 15px;
-  left: -75px;
-}
+  .btns::before{
+    content: url("../images/nav-kal.png");
+    display: block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 15px;
+    left: -75px;
+  }
 
-.btns h4{
-  display: inline-block;
-  margin: 0;
-  margin-right: 30px;
-}
+  .btns h4{
+    display: inline-block;
+    margin: 0;
+    margin-right: 30px;
+  }
 
-.btns h4 a{
-  position: relative;
-}
+  .btns h4 a{
+    position: relative;
+  }
 
-.btns h4 a.active::before{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 25px;
-  left: 40%;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: transparent transparent #404041 transparent;
-}
-.btns h4 a.active::after{
-  content: "";
-  display: block;
-  position: absolute;
-  top: 26px;
-  left: 40%;
-  width: 0;
-  height: 0;
-  border: solid 10px;
-  border-color: transparent transparent #fff transparent;
-}
+  .btns h4 a.active::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 25px;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: transparent transparent #404041 transparent;
+  }
+  .btns h4 a.active::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 26px;
+    left: 40%;
+    width: 0;
+    height: 0;
+    border: solid 10px;
+    border-color: transparent transparent #fff transparent;
+  }
 
 nav.filter{
   padding: 15px 0;
@@ -213,23 +216,23 @@ nav ul.sort li a.active{
 
 
 /*-------------------------------*/
-/*         STUDENT LIST          */
+/*        =STUDENT LIST          */
 /*-------------------------------*/
 
 .students{
   margin-bottom: 50px;
 }
 
-.students ul{
-  list-style: none;
-  width: 11.111%;
-  float: left;
-  font-size: 10px;
-  text-transform: uppercase;
-}
+  .students ul{
+    list-style: none;
+    width: 11.111%;
+    float: left;
+    font-size: 10px;
+    text-transform: uppercase;
+  }
 
 /*-------------------------------*/
-/*          GRID VIEW            */
+/*         =GRID VIEW            */
 /*-------------------------------*/
 
 
@@ -283,7 +286,7 @@ div[id^="panes"] > div{
 
 
 /*-------------------------------*/
-/*         BROWSE VIEW           */
+/*        =BROWSE VIEW           */
 /*-------------------------------*/
 
 .project-browse > div img{
