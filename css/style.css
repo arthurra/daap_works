@@ -275,11 +275,11 @@ div[id^="panes"] > div{
   background-color: blue;
 }
 
-.tabs, .tabs2, .tabs3, .tabs4{
+.tabs1, .tabs2, .tabs3, .tabs4{
   background: #fff;
 }
 
-.tabs > div,
+.tabs1 > div,
 .tabs2 > div,
 .tabs3 > div,
 .tabs4 > div {

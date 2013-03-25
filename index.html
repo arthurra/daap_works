@@ -670,209 +670,80 @@ $(document).ready(function () {
   for (var i=1; i<=6; i++){
     $('#panes' + i).hide();
   }
-  
-  $('.tabs1 > a > li').click(function(){
-  
-    if($('#panes1').hasClass('opened')==false){
-     $('#panes1').addClass('opened');
-     $('#panes1').slideDown();
-    } 
 
-    if($('#panes2').hasClass('opened')==true){
-     $('#panes2').removeClass('opened');
-     $('#panes2').slideUp();
-    } 
-
-    if($('#panes3').hasClass('opened')==true){
-     $('#panes3').removeClass('opened');
-     $('#panes3').slideUp();
-    } 
-
-    if($('#panes4').hasClass('opened')==true){
-     $('#panes4').removeClass('opened');
-     $('#panes4').slideUp();
+$('.tabs1 > a > li').click(function(){
+    for (var k=1; k<=6; k++){
+      if(k == 1){
+        $('#panes1').addClass('opened');
+        $('#panes1').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
-
-    if($('#panes5').hasClass('opened')==true){
-     $('#panes5').removeClass('opened');
-     $('#panes5').slideUp();
-    }
-
-    if($('#panes6').hasClass('opened')==true){
-     $('#panes6').removeClass('opened');
-     $('#panes6').slideUp();
-    }
-
   });
 
   $('.tabs2 > a > li').click(function(){
-  
-    if($('#panes2').hasClass('opened')==false){
-     $('#panes2').addClass('opened');
-     $('#panes2').slideDown();
-    } 
-
-    if($('#panes1').hasClass('opened')==true){
-     $('#panes1').removeClass('opened');
-     $('#panes1').slideUp();
-    } 
-
-    if($('#panes3').hasClass('opened')==true){
-     $('#panes3').removeClass('opened');
-     $('#panes3').slideUp();
-    } 
-
-    if($('#panes4').hasClass('opened')==true){
-     $('#panes4').removeClass('opened');
-     $('#panes4').slideUp();
+    for (var k=1; k<=6; k++){
+      if(k == 2){
+        $('#panes2').addClass('opened');
+        $('#panes2').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
-
-    if($('#panes5').hasClass('opened')==true){
-     $('#panes5').removeClass('opened');
-     $('#panes5').slideUp();
-    }
-
-    if($('#panes6').hasClass('opened')==true){
-     $('#panes6').removeClass('opened');
-     $('#panes6').slideUp();
-    }
-
   });
 
   $('.tabs3 > a > li').click(function(){
-  
-    if($('#panes3').hasClass('opened')==false){
-     $('#panes3').addClass('opened');
-     $('#panes3').slideDown();
-    } 
-
-    if($('#panes1').hasClass('opened')==true){
-     $('#panes1').removeClass('opened');
-     $('#panes1').slideUp();
-    } 
-
-    if($('#panes2').hasClass('opened')==true){
-     $('#panes2').removeClass('opened');
-     $('#panes2').slideUp();
-    } 
-
-    if($('#panes4').hasClass('opened')==true){
-     $('#panes4').removeClass('opened');
-     $('#panes4').slideUp();
+    for (var k=1; k<=6; k++){
+      if(k == 3){
+        $('#panes3').addClass('opened');
+        $('#panes3').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
-
-    if($('#panes5').hasClass('opened')==true){
-     $('#panes5').removeClass('opened');
-     $('#panes5').slideUp();
-    }
-
-    if($('#panes6').hasClass('opened')==true){
-     $('#panes6').removeClass('opened');
-     $('#panes6').slideUp();
-    }
-
   });
 
   $('.tabs4 > a > li').click(function(){
-  
-    if($('#panes4').hasClass('opened')==false){
-     $('#panes4').addClass('opened');
-     $('#panes4').slideDown();
-    } 
-
-    if($('#panes1').hasClass('opened')==true){
-     $('#panes1').removeClass('opened');
-     $('#panes1').slideUp();
-    } 
-
-    if($('#panes2').hasClass('opened')==true){
-     $('#panes2').removeClass('opened');
-     $('#panes2').slideUp();
-    } 
-
-    if($('#panes3').hasClass('opened')==true){
-     $('#panes3').removeClass('opened');
-     $('#panes3').slideUp();
+    for (var k=1; k<=6; k++){
+      if(k == 4){
+        $('#panes4').addClass('opened');
+        $('#panes4').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
-
-    if($('#panes5').hasClass('opened')==true){
-     $('#panes5').removeClass('opened');
-     $('#panes5').slideUp();
-    }
-
-    if($('#panes6').hasClass('opened')==true){
-     $('#panes6').removeClass('opened');
-     $('#panes6').slideUp();
-    }
-
   });
 
   $('.tabs5 > a > li').click(function(){
-  
-    if($('#panes5').hasClass('opened')==false){
-     $('#panes5').addClass('opened');
-     $('#panes5').slideDown();
-    } 
-
-    if($('#panes1').hasClass('opened')==true){
-     $('#panes1').removeClass('opened');
-     $('#panes1').slideUp();
-    } 
-
-    if($('#panes2').hasClass('opened')==true){
-     $('#panes2').removeClass('opened');
-     $('#panes2').slideUp();
-    } 
-
-    if($('#panes3').hasClass('opened')==true){
-     $('#panes3').removeClass('opened');
-     $('#panes3').slideUp();
+    for (var k=1; k<=6; k++){
+      if(k == 5){
+        $('#panes5').addClass('opened');
+        $('#panes5').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
-
-    if($('#panes4').hasClass('opened')==true){
-     $('#panes4').removeClass('opened');
-     $('#panes4').slideUp();
-    }
-
-    if($('#panes6').hasClass('opened')==true){
-     $('#panes6').removeClass('opened');
-     $('#panes6').slideUp();
-    }
-
   });
 
   $('.tabs6 > a > li').click(function(){
-  
-    if($('#panes6').hasClass('opened')==false){
-     $('#panes6').addClass('opened');
-     $('#panes6').slideDown();
-    } 
-
-    if($('#panes1').hasClass('opened')==true){
-     $('#panes1').removeClass('opened');
-     $('#panes1').slideUp();
-    } 
-
-    if($('#panes2').hasClass('opened')==true){
-     $('#panes2').removeClass('opened');
-     $('#panes2').slideUp();
-    } 
-
-    if($('#panes3').hasClass('opened')==true){
-     $('#panes3').removeClass('opened');
-     $('#panes3').slideUp();
-    }
-
-    if($('#panes4').hasClass('opened')==true){
-     $('#panes4').removeClass('opened');
-     $('#panes4').slideUp();
-    }
-
-    if($('#panes5').hasClass('opened')==true){
-     $('#panes5').removeClass('opened');
-     $('#panes5').slideUp();
+    for (var k=1; k<=6; k++){
+      if(k == 6){
+        $('#panes6').addClass('opened');
+        $('#panes6').slideDown();
+      } else {
+        $('#panes' + k).removeClass('opened');
+        $('#panes' + k).slideUp();
+      }
     }
   });
+   
+
 
 });
    </script>
