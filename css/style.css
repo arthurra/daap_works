@@ -257,12 +257,13 @@ nav ul.sort li a.active{
 }
 
 div[id^="panes"]{
-  max-width: 100%;
+  max-width: 115%;
   width: 1150px;
   height: 400px;
   margin-bottom: 15px;
   position: relative;
-  /*overflow: visible !important;*/
+  left: -120px;
+  background: #fff;
   /*the above break it, so the design team can suck it for now*/v
 }
 
@@ -272,6 +273,10 @@ div[id^="panes"] > div{
 
 .panes .opened{
   background-color: blue;
+}
+
+.tabs, .tabs2, .tabs3, .tabs4{
+  background: #fff;
 }
 
 .tabs > div,
@@ -296,10 +301,10 @@ div[id^="panes"] > div{
 }
 
 .project-browse.row{
-  max-width: 115%;
+  max-width: 100%;
   width: 1150px;
   position: absolute;
-  left: -120px;
+  
 }
 
 .project-browse h1, .project-browse h2, .project-browse h3{
