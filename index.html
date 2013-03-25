@@ -86,9 +86,9 @@
           </ul>
 
           <ul class="sort">
-            <li><a href="#"> browse </a></li>
+            <li><a id="browse"> browse </a></li>
             <li> | </li>
-            <li><a href="#" class="active"> grid </a></li>
+            <li><a id="grid" class="active"> grid </a></li>
           </ul>
         </nav>
     </div><!--End Sticky-->
@@ -1489,6 +1489,23 @@ $('.tabs1 > a > li').click(function(){
   $("#all").click(function () {
     $("li").removeClass("filter");
   });
+
+
+
+  //----------  VIEW CONTROLS  -----------//
+
+  $("#browse").click(function () {
+    $(".project-grid").addClass("browse");
+    $(this).addClass("active");
+    $("#grid").removeClass("active");
+  });  
+
+  $("#grid").click(function () {
+    $(".project-grid").removeClass("browse");
+    $(this).addClass("active");
+    $("#browse").removeClass("active");
+  }); 
+
 
 });
    </script>

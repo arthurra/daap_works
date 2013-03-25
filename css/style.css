@@ -178,6 +178,7 @@ nav.filter{
   text-transform: uppercase;
   font-size: 11pt;
   max-width: 68.25em;
+  cursor: pointer;
 }
 
 nav ul.links{
@@ -240,13 +241,14 @@ nav ul.sort li a.active{
 /*-------------------------------*/
 
 .tab.filter{
-  opacity: 0.25 !important;
+  opacity: 0.2 !important;
 }
 
 .tab {
   /*height: 75px;*/
   /*width: 100px;*/
   margin: 0 15px 15px 0;
+  margin-right: 13px !important; /* <<--- get rid of this once you get all of the thumbnail images in */  
   display: inline-block;
   /*background-color: gray;*/
 }
@@ -256,11 +258,15 @@ nav ul.sort li a.active{
 }
 
 .project-grid:hover li{
-  opacity: 0.65;
+  opacity: 0.25;
 }
 
 .project-grid ul li:hover{
   opacity: 1 !important;
+}
+
+.project-grid ul li:not(.filter){
+  opacity: 1;
 }
 
 div[id^="panes"]{
@@ -330,3 +336,21 @@ div[id^="panes"] > div{
 .project-browse h3{
   margin: 20px 0;
 }
+
+.project-grid.browse ul[class^="tabs"] {
+  display: none; 
+}
+.project-grid.browse div[id^="panes"] {
+  display: block !important;
+  height: initial; 
+}
+.project-grid.browse div[id^="panes"] .project-browse {
+  display: block !important;
+  position: relative;
+  margin-bottom: 20px; 
+}
+
+
+
+
+
