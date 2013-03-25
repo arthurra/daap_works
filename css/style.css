@@ -198,6 +198,10 @@ nav ul.links li{
   float: left;
 }
 
+nav ul.links li a{
+  cursor: pointer;
+}
+
 nav ul.sort li{
   list-style: none;
   float: right;
@@ -235,6 +239,9 @@ nav ul.sort li a.active{
 /*         =GRID VIEW            */
 /*-------------------------------*/
 
+.tab.filter{
+  opacity: 0.25 !important;
+}
 
 .tab {
   height: 75px;
@@ -249,11 +256,11 @@ nav ul.sort li a.active{
 }
 
 .project-grid:hover li{
-  opacity: 0.5;
+  opacity: 0.65;
 }
 
 .project-grid ul li:hover{
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 div[id^="panes"]{

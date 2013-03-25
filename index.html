@@ -79,10 +79,10 @@
 
         <nav class="filter row">
           <ul class="links">
-            <!-- <li><a href="#"> 62 all </a></li> -->
-            <li><a href="#"> 08 motion </a></li>
-            <li><a href="#"> 36 print </a></li>
-            <li><a href="#"> 22 interaction </a></li>
+            <li><a id="all"> 62 all </a></li>
+            <li><a id="motion"> 08 motion </a></li>
+            <li><a id="print"> 36 print </a></li>
+            <li><a id="interactive"> 22 interaction </a></li>
           </ul>
 
           <ul class="sort">
@@ -744,6 +744,30 @@ $('.tabs1 > a > li').click(function(){
   });
    
 
+
+  //----------  FILTER CODE  -----------//
+
+  $("#print").click(function () {
+    $("li.m").addClass("filter");
+    $("li.i").addClass("filter");
+    $("li.p").removeClass("filter");
+  });
+
+  $("#motion").click(function () {
+    $("li.p").addClass("filter");
+    $("li.i").addClass("filter");
+    $("li.m").removeClass("filter");
+  });
+
+  $("#interactive").click(function () {
+    $("li.m").addClass("filter");
+    $("li.p").addClass("filter");
+    $("li.i").removeClass("filter");
+  });
+
+  $("#all").click(function () {
+    $("li").removeClass("filter");
+  });
 
 });
    </script>
