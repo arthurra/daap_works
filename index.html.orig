@@ -178,6 +178,7 @@
 
     <div class="project-grid row">
 
+<<<<<<< HEAD
       <div class="first-row">
         <ul class="tabs">
           <a href="#"><li class="tab">  </li></a>
@@ -258,6 +259,7 @@
         <a href="#"><li class="tab">  </li></a>
         <a href="#"><li class="tab">  </li></a>
         <a href="#"><li class="tab">  </li></a>
+=======
       <ul class="tabs">
         <a href="#"><li class="tab" id="Mary">  </li></a>
         <a href="#"><li class="tab" id="Gennett">  </li></a>
@@ -268,6 +270,7 @@
         <a href="#"><li class="tab" id="Martinovich">  </li></a>
         <a href="#"><li class="tab" id="Davis-Weinstein">  </li></a>
         <a href="#"><li class="tab" id="Selzer">  </li></a>
+>>>>>>> ids
       </ul>
 
       <div id="panes2">
@@ -310,6 +313,20 @@
           <h1>Project 8 Information</h1>
           <img src="images/Web.jpg" />
         </div>
+<<<<<<< HEAD
+  
+      </div><!--End #panes2-->
+    
+      <ul class="tabs3">
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+=======
       </div><!--End #panes1-->
 
 
@@ -324,6 +341,7 @@
         <a href="#"><li class="tab" id="McCarthy">  </li></a>
         <a href="#"><li class="tab" id="Hoell">  </li></a>
         <a href="#"><li class="tab" id="Kujawski">  </li></a>
+>>>>>>> ids
       </ul>
       <div id="panes3">
         <div>
@@ -366,6 +384,19 @@
           <img src="images/Web.jpg" />
         </div>
   
+<<<<<<< HEAD
+      </div><!--End #panes3-->
+
+      <ul class="tabs4">
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+=======
     </div><!--End #panes2-->
     
       <ul class="tabs3">
@@ -379,6 +410,7 @@
         <a href="#"><li class="tab" id="Hakim">  </li></a>
         <a href="#"><li class="tab" id="Fite">  </li></a>
         <a href="#"><li class="tab" id="Kowal-Herbert">  </li></a>
+>>>>>>> ids
       </ul>
 
       <div id="panes4">
@@ -423,6 +455,17 @@
         </div>
       </div><!--End #panels4-->
 
+<<<<<<< HEAD
+      <ul class="tabs5">
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+=======
       <ul class="tabs4">
         <a href="#"><li class="tab" id="Prehodick">  </li></a>
         <a href="#"><li class="tab" id="Stevens">  </li></a>
@@ -434,6 +477,7 @@
         <a href="#"><li class="tab" id="Singh">  </li></a>
         <a href="#"><li class="tab" id="Baker">  </li></a>
         <a href="#"><li class="tab" id="Gallagher">  </li></a>
+>>>>>>> ids
       </ul>
 
       <div id="panes5">
@@ -476,6 +520,9 @@
           <h1>Project 8 Information</h1>
           <img src="images/Web.jpg" />
         </div>
+<<<<<<< HEAD
+      </div><!--End #panels5-->
+=======
   
     </div><!--End project-grid-->
        <ul class="tabs5">
@@ -506,8 +553,63 @@
           Project 3 Information
             <img src="images/bitch2.jpg" />
           </div>
+>>>>>>> ids
 
       <ul class="tabs6">
+<<<<<<< HEAD
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+        <a href="#"><li class="tab">  </li></a>
+      </ul>
+
+      <div id="panes6">
+        <div>
+          <h1>Project 1 Information</h1>
+          <img src="images/guy2.jpg" />
+        </div>
+  
+        <div>
+          <h1>Project 2 Information</h1>
+          <img src="images/bitch1.jpg" />
+        </div>
+  
+        <div>
+          <h1>Project 3 Information</h1>
+          <img src="images/bitch2.jpg" />
+        </div>
+
+        <div>
+          <h1>Project 4 Information</h1>
+          <img src="images/guy2.jpg" />
+        </div>
+      
+        <div>
+          <h1>Project 5 Information</h1>
+          <img src="images/hipster.jpg" />
+        </div>
+  
+        <div>
+          <h1>Project 6 Information</h1>
+          <img src="images/hipster1.jpg" />
+        </div>
+  
+        <div>
+          <h1>Project 7 Information</h1>
+          <img src="images/star.png" />
+        </div>
+
+        <div>
+          <h1>Project 8 Information</h1>
+          <img src="images/Web.jpg" />
+        </div>
+      </div><!--End #panels6-->
+
+=======
         <a href="#"><li class="tab" id="Kemme">  </li></a>
         <a href="#"><li class="tab" id="Katz">  </li></a>
         <a href="#"><li class="tab" id="Anderson">  </li></a>
@@ -560,6 +662,7 @@
         </div>
   
     </div>
+>>>>>>> ids
       <ul class="tabs7">
         <a href="#"><li class="tab">  </li></a>
         <a href="#"><li class="tab">  </li></a>
@@ -666,7 +769,11 @@
         </div>
       </div><!--End #panels4-->
 
+<<<<<<< HEAD
+    </div><!--End project-grid-->
+=======
   </div>
+>>>>>>> ids
 
 
 
