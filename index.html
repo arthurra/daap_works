@@ -179,7 +179,7 @@
     <div class="project-grid row">
 
       <div class="first-row">
-        <ul class="tabs">
+        <ul class="tabs1">
           <a href="#"><li class="tab" id="Mary">  </li></a>
           <a href="#"><li class="tab" id="Gennett">  </li></a>
           <a href="#"><li class="tab" id="Hans">  </li></a>
@@ -659,14 +659,17 @@ $(function() {
     $("ul.tabs6").tabs("#panes6 > div", {effect: 'fade', fadeOutSpeed: 100});
 });
 
+//$(function() {
+//  for (var j=1; j<=6; j++){
+//    $(".tabs" + j).tabs("#panes" + j " > div", {effect: 'fade', fadeOutSpeed: 100});
+//  }
+//});
+
 $(document).ready(function () {
 
-  $('#panes1').hide();
-  $('#panes2').hide();
-  $('#panes3').hide();
-  $('#panes4').hide();
-  $('#panes5').hide();
-  $('#panes6').hide();
+  for (var i=1; i<=6; i++){
+    $('#panes' + i).hide();
+  }
   
   $('.tabs > a > li').click(function(){
   
