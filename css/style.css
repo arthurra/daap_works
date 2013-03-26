@@ -317,7 +317,6 @@ div[id^="panes"] > div{
   max-width: 100%;
   width: 1150px;
   position: absolute;
-  
 }
 
 .project-browse h1, .project-browse h2, .project-browse h3{
@@ -351,6 +350,27 @@ div[id^="panes"] > div{
 }
 
 
+/*-------------------------------*/
+/*           =FOOTER             */
+/*-------------------------------*/
 
+footer{
+  text-transform: uppercase;
+  margin-top: 75px;
+}
+
+footer h2{
+  font-weight: bold;
+}
+
+footer ul{
+  margin-top: 15px;
+  margin-bottom: 100px; 
+}
+
+footer p{
+  margin: 0;
+  font-size: 10px;
+}
 
 
