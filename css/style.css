@@ -378,3 +378,33 @@ footer p{
 }
 
 
+/*-------------------------------*/
+/*          =YEARBOOK            */
+/*-------------------------------*/
+
+#yearbook #sticky{
+  padding-bottom: 10px;
+}
+
+#yearbook h3{
+  text-transform: uppercase;
+}
+
+.promo{
+  margin: 25px 0;
+}
+
+.promo video{
+  width: 100%;
+  height: 550px;
+  background: gray;
+}
+
+#yearbook img{
+  height: 197px;
+}
+
+.headshots{
+  margin-bottom: 100px;
+}
+
