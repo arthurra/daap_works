@@ -295,7 +295,11 @@ div[id^="panes"] > div{
 .tabs1 > div,
 .tabs2 > div,
 .tabs3 > div,
-.tabs4 > div {
+.tabs4 > div,
+.tabs5 > div,
+.tabs6 > div,
+.tabs7 > div,
+.tabs8 > div,  {
   width: 231px;
   height: 163px;
   margin: 5px;
