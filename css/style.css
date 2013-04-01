@@ -248,8 +248,7 @@ nav ul.sort li a.active{
 .tab {
   /*height: 75px;*/
   /*width: 100px;*/
-  margin: 0 15px 15px 0;
-  margin-right: 13px !important; /* <<--- get rid of this once you get all of the thumbnail images in */  
+  margin: 0 30px 25px 0;
   display: inline-block;
   /*background-color: gray;*/
 }
