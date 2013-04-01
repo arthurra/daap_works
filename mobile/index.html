@@ -1,0 +1,1163 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=.5, maximum-scale=.5, user-scalable=no" />
+<title>DAAPWorks 2013</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:400,700,700italic,100italic,100,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="stylesheets/styles.css">
+<style>
+	/* simple style reset */
+	body, h1, h2, h3, p {
+		margin: 0; 
+		margin: 0;
+	}
+
+	::selection {
+		background: #c00;
+		color:#fff;
+	}
+
+	::-moz-selection {
+		background: #c00;
+		color:#fff;
+	}
+	#wrapper {
+		margin: 0 auto;
+		padding-top:30px;
+	}
+
+	h1 {
+		color: #414042;
+	}
+
+	nav {
+		color:#999;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		letter-spacing: 4px;
+		line-height:57px;
+	}
+	#container1 {
+		margin:48px 0px 30px;
+	}
+
+	#calendarImg {
+		margin-bottom:61px;
+	}
+
+	.floatLeft{
+		float:left;
+	}
+	.centerImg {
+		display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	.fixedTop0 {
+		position:fixed;
+		top:0px;
+		margin-top:0px;
+	}
+	
+	.fixedTop60 {
+		position:fixed;
+		top:0px;
+		margin-top:60px;
+	}
+	
+	.fixedTop120 {
+		position:fixed;
+		top:0px;
+		margin-top:120px;
+	}
+	
+	.fixedBottom60 {
+		position:fixed;
+		bottom:0px;
+		margin-bottom:60px;
+	}
+	.fixedBottom0 {
+		position:fixed;
+		bottom:0px;
+		margin-bottom:0px;
+	}
+
+	.paddingTopContainer60{
+		padding-top:60px;
+	}
+	.paddingTopContainer94{
+		padding-top:94px;
+	}
+
+	.paddingBottomContainer99{
+		padding-bottom:64px;
+	}
+
+	.paddingBottomContainer60{
+		padding-bottom:60px;
+	}
+	
+	.navBar {
+		height:57px;
+		background-color:#ffffff;
+		border-top:dotted;
+		border-bottom:dotted;
+		border-color:#b5b5b5;
+		text-align:center;
+		cursor: pointer;
+		cursor: hand;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.navContent {
+		margin-left:20px;
+	}
+
+	.navBarTop {
+		width:100%;
+		left:0;
+		top:0;
+		position:fixed;
+		height:64px;
+		background-color:#ffffff;
+		border-bottom:solid;
+		border-color:#b5b5b5;
+		text-align:center;
+		cursor: pointer;
+		cursor: hand;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
+
+	.navBarTop h1 {
+		color:#999;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 14px;
+		letter-spacing: 4px;
+		line-height:64px;
+	}
+
+	.navBarTop h2 {
+		color:#999;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-style:italic;
+		font-size: 14px;
+		letter-spacing: 4px;
+		line-height:64px;
+	}
+
+	.navBar h1 {
+		color:#999;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		letter-spacing: 4px;
+		line-height:57px;
+	}
+
+	#daapworksContent h1{
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 4px;
+		text-align: center;
+		margin-top:80px;
+	}
+	#daapworksContent h2{
+		color: #808285;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 36px;
+		text-align: center;
+		margin-bottom:50px;
+	}
+
+	.addToCalandarBtn {
+		margin-top: 61px;
+		margin-left: 71px;
+}
+	.addToCalandarBtn h3{
+		float:left;
+		color: #414042;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 36px;
+
+	}
+	#directionsContent {
+		width:640px;
+		margin-top:80px;
+		margin-bottom: 100px;
+	}
+	.directionsTitle {
+		margin-left:92px;
+	}
+	#directionsContent h1{
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 36px;
+		letter-spacing: 4px;
+		text-align: left;
+	}
+	#directionsContent h2{
+		color: #808285;
+		font-family: 'Lato', sans-serif;
+		font-weight: 300;
+		font-size: 36px;
+		text-align: left;
+		margin-bottom:50px;
+	}
+
+	#directionsContent a{
+		color: #808285;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-style: italic;
+		font-size: 36px;
+		text-decoration:none;
+		margin-bottom:50px;
+	}
+
+	#directionsContent img{
+		margin-bottom:20px;
+	}
+
+	#graduatesContent {
+		width:532px;
+		margin-top:36px;
+	}
+	#graduatesContent h1{
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		text-align: left;	
+	}
+
+	#graduatesContent h2{
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		font-style: italic;
+		font-size: 24px;
+		letter-spacing: 1px;
+		text-align: left;	
+	}
+
+	#graduatesContent h3{
+		color:#d1645d;
+		font-family: 'Lato', sans-serif;
+		font-weight: 700;
+		font-size: 24px;
+		text-align: right;	
+	}
+
+	.circleLetter {
+		margin-bottom:42px;
+	}
+
+	.graduateInfoBox {
+		height: 60px;
+		float: left;
+		border-top: solid;
+		border-color: #C1C1C1;
+		border-width: 1px;
+		margin-bottom: 30px;
+		cursor: pointer;
+		cursor: hand;
+		overflow: hidden;
+	}
+	.wayfindingImg {
+		margin-top:30px;
+	}
+	#slideshow-area {
+	  	width: 640px;
+		height: 541px;
+		overflow: hidden;
+		margin-bottom:60px;
+	}
+
+	#slideshow-scroller {
+	  	width: 423px;
+		height: 541px;
+		overflow: hidden;
+		margin-left:110px;
+	}
+
+	#slideshow-holder {
+  		height: 541px;
+  		width: 700px;
+	}
+
+/*	#divider-left{
+		margin-left: 104px;
+	}*/
+
+	#arrowRight {
+		margin-left:100px;
+	}
+
+	#slideshow-previous, #slideshow-next {
+		cursor: pointer;
+		cursor: hand;
+	}
+
+	#slideshow-previous {
+		margin-left: 36px;
+		margin-top: 181px;
+	}
+	#slideshow-next {
+		margin-top: 176px;
+		margin-left: 43px;
+	}
+
+	.slideshow-content {
+		float: left;
+		padding-left:2px;
+	}
+	.textAlignRight {
+		text-align: right;
+	}
+</style>
+
+</head>
+
+
+
+
+
+
+
+<body>
+
+<div id="wrapper">
+	<div id="container3">
+		<div class="navBarTop">
+			<img src="images/showLogoSmall.png" class="floatLeft">
+			<h1 class="navContent floatLeft goToDaapworks" style="color:#A0CF67">DAAPWORKS</h1>
+			<h2 class="navContent floatLeft">//</h2>
+			<h1 class="navContent floatLeft goToDirections" style="color:#5A87C6">DIRECTIONS</h1>
+			<h2 class="navContent floatLeft">//</h2>
+			<h1 class="navContent floatLeft goToGraduates" style="color:#F1645D">GRADUATES</h1>
+		</div>
+		<div id="container2">
+			<div id="container1">
+				<img src="images/daapShowLogo.png" class="centerImg"></img>
+			</div>
+
+			<div class="navBar goToDaapworks">
+				<h1>DAAPWORKS</h1>
+			</div>
+
+		    <div id="daapworksContent" class="contentBlock">
+		    	<h1>2013 Graphic Communication <br>Design Exhibition</h1>
+		    	<h2>April 23–27</h2>
+		    </div>
+
+
+		    <div id="slideshow-area" class="centerImg">
+<!-- 		    	<img src="images/arrow_left.png" id="slideshow-previous" class="floatLeft"></img>
+ -->		    	
+<!-- 		    	<div id="divider-left">
+					<img src="images/divider.png"class="floatLeft"></img>
+		    	</div> -->
+				
+				<div id="slideshow-scroller" class="floatLeft">
+					<div id="slideshow-holder">
+						<div class="slideshow-content">
+							<img src="images/calendarStart.png" id="slideshow-start"/>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarAll.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDAll.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarTuesday.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDApril23.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarWednesday.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDApril24.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarThursday.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDApril25.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarFriday.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDApril26.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+						<div class="slideshow-content">
+							<img src="images/calendarSaturday.png" />
+							<div class="addToCalandarBtn">
+	    						<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    						<a href="calendars/GRCDApril27.ics">
+	    							<h3>Add to Calendar</h3>
+	    						</a>
+	    					</div>
+						</div>
+					</div>
+				</div>
+<!-- 				<img src="images/divider.png" class="floatLeft"></img> -->
+
+				<div id="arrowRight">
+					<img src="images/arrow_rightLarge.png" id="slideshow-next"></img>
+				</div>
+		
+
+			</div>
+
+
+		</div>
+
+
+
+
+		<div class="navBar gotoDirections">
+			<h1>DIRECTIONS</h1>
+		</div>
+
+
+
+
+		<div id="directionsContent" class="contentBlock centerImg">
+			<div class="directionsTitle">
+				<img src="images/calendarTriangle.png" class="floatLeft"></img>
+	    		<h1>DAAP</h1>
+	    		<h2>2624 Clifton Ave. <br> Cincinnati, Ohio 45221</h2>
+	    	</div>
+    		<img src="images/daapBuildingSmall.jpg"></img>
+	    	<h2 class="directionsTitle">
+				Detailed map and directions // <a href="http://maps.apple.com/?q=2624+clifton+avenue+cincinnati+ohio+45221" target = "blank">click</a>
+				<br>
+				Parking information // <a href="http://www.uc.edu/content/dam/uc/parking/docs/02373%20WestParkingMapRev.pdf" target = "blank">click</a>
+			</h2>
+			<h2 class="directionsTitle">
+				
+			</h2>
+		</div>
+	</div>
+
+
+
+
+	<div id="graduatesNav" class="navBar goToGraduates">
+		<h1>GRADUATES</h1>
+	</div>
+
+
+
+
+	<div id="graduatesContent" class="contentBlock centerImg">
+		<div>
+			<img src="images/circle_A.png" class="circleLetter centerImg"></img>
+			<h3>Room #</h3>
+		</div>
+
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Adrienne Mary</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Alex Gennett</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Alyssa Hans</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Amy Wicks</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Andrea Schwallie</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Ann Burger</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Anna Martinovich</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Annie Davis</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Arielle Selzer</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+		
+		<img src="images/circle_B.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Bob Kelley</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Brian Gates</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Bryant Wells</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+		
+		<img src="images/circle_C.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Cam Helffrich</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Caroline Baritot</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Chelsea Sanders</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Christina Gettler</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Cody McCarthy</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Colin Hoell</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Corey Kujawski</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_D.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Drew Stocker</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_E.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Eileen Dolan</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Ellen Littmann</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Emily Mansoor</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Emily Sapp</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Eric Gentry</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_F.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Fallon Venable</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_G.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>George Hakim</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_J.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Jake Mercuri</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Jared Fite</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Jen Kowal</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Jesse Prehodick</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Jordan Stevens</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_K.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kaity Hammerstein</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Karen Budke</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Katie Pelicano</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kendra Doherty</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kenny Schipper</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kiran Singh</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kyle Baker</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kyle Gallagher</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Kyle Griggs</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_L.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Lauren Weir</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Loran Sanvido</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Luke Mayle</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		
+
+		
+		<img src="images/circle_M.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Mac Clenney</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Mary Lodwick</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Matt Hayes</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Matt Pemberton</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Megan Geiman</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Meredith Ross</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Michelle Kowalski</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_N.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Nick Ross</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_P.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Peter Kemme</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		
+
+		<img src="images/circle_R.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Rebecca Katz</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Robin Anderson</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Ryan Arthur</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+
+
+		<img src="images/circle_S.png" class="circleLetter centerImg"></img>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Sara Baumgartner</h1>
+				<h2>Motion</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Sarah Fukatsu</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Sarah Rolitsky</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Sarah Weinstein</h1>
+				<h2>Interactive</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Suzanne Herbert</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+		<div class="graduateInfoBox">
+			<div class="floatLeft">
+				<h1>Suzy Taylor</h1>
+				<h2>Print</h2>
+			</div>
+			<h3>3450</h3>
+			<img src="images/daapMaap1.png" class="wayfindingImg"></img>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+$(function() {
+	
+	//Calculate the height of <header>
+	//Use outerHeight() instead of height() if have margin
+    var heightContainer1 = $('#container1').outerHeight(true);
+	var heightContainer2 = $('#container2').outerHeight(true);
+	var heightContainer3 = $('#container3').outerHeight(true);
+	var scrollBottom = $(window).scrollTop() + $(window).height();
+	var offsetTop = 207;
+	var offsetTop2 = 163;
+	
+	
+	window.scrollTo(0,0);
+
+
+	//Click Select Button
+
+	$('.goToDaapworks').click(function (){
+		$('html, body').animate({
+                scrollTop: $("#daapworksContent").offset().top -offsetTop
+                 }, 1000);
+	});
+
+	$('.goToDirections').click(function (){
+		$('html, body').animate({
+	             scrollTop: $("#directionsContent").offset().top -offsetTop
+	             }, 1000);
+	});
+
+
+	$(".goToGraduates").click(function (){
+		$('html, body').animate({
+			scrollTop: $("#graduatesContent").offset().top -offsetTop2
+			}, 1000);
+	});
+
+	// $('.graduateInfoBox').click(function (){
+	// 	$('.graduateInfoBox').animate({height: '60'});
+	// 	$(this).animate({height: '400'});
+	// });
+
+
+	var totalSlides = 0;
+	var currentSlide = 1;
+	var contentSlides = "";
+
+	$("#slideshow-previous").click(showPreviousSlide);
+	$("#slideshow-next").click(showNextSlide);
+	$("#slideshow-start").click(showNextSlide);
+
+	var totalWidth = 700;
+	contentSlides = $(".slideshow-content");
+	contentSlides.each(function(i){
+	totalWidth += this.clientWidth;
+	totalSlides++;
+	});
+	$("#slideshow-holder").width(totalWidth);
+	$("#slideshow-scroller").attr({scrollLeft: 0});
+	updateButtons();
+
+	function showPreviousSlide()
+	{
+	  currentSlide--;
+	  updateContentHolder();
+	  updateButtons();
+	}
+
+	function showNextSlide()
+	{
+		currentSlide++;
+		updateContentHolder();
+		updateButtons();
+	}
+
+	function updateContentHolder()
+	{
+		var scrollAmount = 0;
+		contentSlides.each(function(i){
+			if(currentSlide - 1 > i) {
+				scrollAmount += this.clientWidth;
+			}
+			else if (currentSlide -1 >5 ){
+				currentSlide = 0;
+			}
+			else if (currentSlide -1 <0 ){
+				currentSlide = 7;
+			}
+
+		});
+			$("#slideshow-scroller").animate({scrollLeft: scrollAmount}, 900);
+	}
+
+	// function updateButtons()
+	// {
+	// 	if(currentSlide < totalSlides && 1 < currentSlide) {
+	// 		$("#slideshow-next").show();
+	// 	} else {
+	// 		$("#slideshow-next").hide();
+	// 	}
+	// 	if(currentSlide > 0) {
+	// 		$("#slideshow-previous").show();
+	// 		} else {
+	// 	$("#slideshow-previous").hide();
+	// 	}
+	// }
+	function myFunction()
+{
+
+}
+});
+
+</script>
+
+</body>
+</html>
