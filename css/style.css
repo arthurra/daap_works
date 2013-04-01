@@ -354,6 +354,22 @@ div[id^="panes"] > div{
   margin-bottom: 20px; 
 }
 
+/*-------------------------------*/
+/*           =SLIDER          */
+/*-------------------------------*/
+
+#rotating-item-wrapper {
+    position: relative;
+    width: 825px;
+    height: 415px;
+}
+.rotating-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 
 /*-------------------------------*/
 /*           =FOOTER             */

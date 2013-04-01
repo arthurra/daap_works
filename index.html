@@ -13,14 +13,25 @@
  <link rel="stylesheet" href="css/foundation.min.css" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
   
 
   <script src="js/vendor/custom.modernizr.js"></script>
 
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=3.0.1"></script>
+<script type="text/javascript" src="js/infinite-rotator.js"></script>
+
    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+   
+
+
+
+
 
    
 
@@ -206,9 +217,16 @@
           <!-- ADRIENNE MARY -->
           <div class="project-browse row" id="Mary">
 
-            <div class="large-8 columns">
-              <img src="images/project_images/Mary_glamour.jpg" alt="project-preview" class="do-it"/>
-            </div>
+           <div class="large-8 columns">
+            
+            <img class="rotating-item" src="images/project_images/Mary_glamour.jpg" alt="mary1" width="825" height="465" />
+             <img class="rotating-item" src="images/project_images/Mary_process1.jpg" alt="mary2" width="825" height="465" />
+             <img class="rotating-item" src="images/project_images/Mary_glamour.jpg" alt="mary3" width="825" height="465" />
+                
+              </div>
+            
+
+            
 
             <div class="large-4 columns">
               <h1> Uniqu - A Pop-Up Fashion Brand </h1>
@@ -1498,6 +1516,51 @@ $(function() {
 $(function() {
     $("ul.names7").tabs("#panes7 > div", {effect: 'fade', fadeOutSpeed: 100});
 });
+
+
+
+$(window).load(function() { //start after HTML, images have loaded
+ 
+    var InfiniteRotator =
+    {
+        init: function()
+        {
+            //initial fade-in time (in milliseconds)
+            var initialFadeIn = 2000;
+ 
+            //interval between items (in milliseconds)
+            var itemInterval = 5000;
+            //cross-fade time (in milliseconds)
+            var fadeTime = 2500;
+ 
+            //count number of items
+            var numberOfItems = $('.rotating-item').length;
+ 
+            //set current item
+            var currentItem = 0;
+ 
+            //show first item
+            $('.rotating-item').eq(currentItem).fadeIn(initialFadeIn);
+ 
+            //loop through the items
+            var infiniteLoop = setInterval(function(){
+                $('.rotating-item').eq(currentItem).fadeOut(fadeTime);
+ 
+                if(currentItem == numberOfItems -1){
+                    currentItem = 0;
+                }else{
+                    currentItem++;
+                }
+                $('.rotating-item').eq(currentItem).fadeIn(fadeTime);
+ 
+            }, itemInterval);
+        }
+    };
+ 
+    InfiniteRotator.init();
+ 
+});
+
 
 //$(function() {
 //  for (var j=1; j<=6; j++){
