@@ -429,4 +429,14 @@ footer p{
 .headshots{
   margin-bottom: 100px;
 }
+  .headshots > div{
+    margin-bottom: 20px;
+  }
+
+/*-------------------------------*/
+/*          =ABOUT               */
+/*-------------------------------*/
+#about #sticky{
+  padding-bottom: 10px;
+}
 
