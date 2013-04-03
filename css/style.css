@@ -253,6 +253,12 @@ nav ul.sort li a.active{
   /*background-color: gray;*/
 }
 
+.project-grid{
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  border-bottom: 3px solid #404041;
+}
+
 .project-grid li{
   -webkit-transition: opacity 0.3s;
 }
@@ -292,14 +298,7 @@ div[id^="panes"] > div{
   background: #fff;
 }
 
-.tabs1 > div,
-.tabs2 > div,
-.tabs3 > div,
-.tabs4 > div,
-.tabs5 > div,
-.tabs6 > div,
-.tabs7 > div,
-.tabs8 > div,  {
+div[class^="tabs"] > div{
   width: 231px;
   height: 163px;
   margin: 5px;
@@ -321,6 +320,7 @@ div[id^="panes"] > div{
   max-width: 100%;
   width: 1150px;
   position: absolute;
+  background: #fff;
 }
 
 .project-browse.row .large-4 {
@@ -427,7 +427,9 @@ footer p{
 }
 
 .headshots{
-  margin-bottom: 100px;
+  padding-bottom: 25px;
+  margin-bottom: 75px;
+  border-bottom: 3px solid #4d4d4d;
 }
   .headshots > div{
     margin-bottom: 20px;
