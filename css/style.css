@@ -360,7 +360,7 @@ div[id^="panes"] > div{
 #rotating-item-wrapper {
     position: relative;
     width: 825px;
-    height: 415px;
+    height: 465px;
 }
 .rotating-item {
     display: none;
