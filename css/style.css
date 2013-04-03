@@ -362,7 +362,7 @@ div[id^="panes"] > div{
     width: 825px;
     height: 465px;
 }
-.rotating-item {
+.rotatorr {
     display: none;
     position: absolute;
     top: 0;
@@ -426,5 +426,7 @@ footer p{
 
 .large-4 {
   margin-bottom: 20px;
+  overflow-y: scroll;
+  height: 400px;
 }
 
