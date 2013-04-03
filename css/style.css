@@ -323,6 +323,12 @@ div[id^="panes"] > div{
   position: absolute;
 }
 
+.project-browse.row .large-4 {
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  height: 400px;
+}
+
 .project-browse h1, .project-browse h2, .project-browse h3{
   text-transform: uppercase;
 }
@@ -422,11 +428,5 @@ footer p{
 
 .headshots{
   margin-bottom: 100px;
-}
-
-.large-4 {
-  margin-bottom: 20px;
-  overflow-y: scroll;
-  height: 400px;
 }
 
