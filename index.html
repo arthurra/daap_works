@@ -1490,11 +1490,9 @@
         var center_y = (offset.top) + (img1.height()/2);
         var mouse_x = evt.pageX; var mouse_y = evt.pageY;
         var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
-        var degree = (radians * (180 / Math.PI) * -0.5) + 90;
-        var degree2 = (radians * (180 / Math.PI) * 0.25); 
-        var degree3 = (radians * (180 / Math.PI) * -0.5) + 180;
-        var degree4 = (radians * (180 / Math.PI) * 0.25) + 180; 
-        var degree5 = (radians * (180 / Math.PI) * -1) - 90;
+        var degree = (radians * (180 / Math.PI) * -0.05);
+        var degree2 = (radians * (180 / Math.PI) * 0.05); 
+        var degree3 = (radians * (180 / Math.PI) * -0.1);
 
         img1.css('-moz-transform', 'rotate('+degree+'deg)');
         img1.css('-webkit-transform', 'rotate('+degree+'deg)');

@@ -80,6 +80,45 @@
 
 
   </body>
+
+  <script type="text/javascript">
+    var img1 = $('#ring1');
+    var img2 = $('#ring2');
+    var img3 = $('#ring3');
+  
+    if(img1.length > 0){
+      var offset = img1.offset();
+      var offset2 = img2.offset();
+      function mouse(evt){
+        var center_x = (offset.left) + (img1.width()/2);
+        var center_y = (offset.top) + (img1.height()/2);
+        var mouse_x = evt.pageX; var mouse_y = evt.pageY;
+        var radians = Math.atan2(mouse_x - center_x, mouse_y - center_y);
+        var degree = (radians * (180 / Math.PI) * -0.05);
+        var degree2 = (radians * (180 / Math.PI) * 0.05); 
+        var degree3 = (radians * (180 / Math.PI) * -0.1);
+
+        img1.css('-moz-transform', 'rotate('+degree+'deg)');
+        img1.css('-webkit-transform', 'rotate('+degree+'deg)');
+        img1.css('-o-transform', 'rotate('+degree+'deg)');
+        img1.css('-ms-transform', 'rotate('+degree+'deg)');
+
+        img2.css('-moz-transform', 'rotate('+degree2+'deg)');
+        img2.css('-webkit-transform', 'rotate('+degree2+'deg)');
+        img2.css('-o-transform', 'rotate('+degree2+'deg)');
+        img2.css('-ms-transform', 'rotate('+degree2+'deg)');
+
+        img3.css('-moz-transform', 'rotate('+degree3+'deg)');
+        img3.css('-webkit-transform', 'rotate('+degree3+'deg)');
+        img3.css('-o-transform', 'rotate('+degree3+'deg)');
+        img3.css('-ms-transform', 'rotate('+degree3+'deg)');
+
+      }
+      $(document).mousemove(mouse);
+    }
+  </script>
+
+  
   <script type="text/javascript">
     $(document).ready(function() {
  
