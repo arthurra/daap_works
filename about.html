@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+  <head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>GRCD 2013</title>
+  
+  <link rel="stylesheet" href="css/normalize.css" />
+  
+ <link rel="stylesheet" href="css/foundation.min.css" />
+
+  <link rel="stylesheet" href="css/style.css" />
+  
+
+  <script src="js/vendor/custom.modernizr.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+   
+
+  
+
+</head>
+  <body>
+    <header class="header">
+      <div id="kaleidoscope">
+        <img id="ring1" alt="ring" src="images/red.png"/>
+        <img id="ring2" alt="ring" src="images/green.png"/>
+        <img id="ring3" alt="ring" src="images/blue.png"/>
+      </div>
+
+      <div class="row">
+        <h1> GRCD 2013 </h1>
+        <h2> DAAPWORKS </h2>
+        <h3> A WEDDING WITH 62 BRIDES </h3>
+
+        <ul class="when">
+          <li><p> when</p></li>
+          <li><p> opens april 23 2013 5-9pm </p></li>
+          <li><p> opening reception 5-6pm </p></li>
+          <li><p> open april 24 - 27 9-9pm </p></li>
+          <li><p> free admission and snacks! </p></li>
+        </ul>
+
+        <ul class="where">
+          <li><p> where </p></li>
+          <li><p> DAAP Aronoff building </p></li>
+          <li><p> 24310 Clifton Ave. </p></li>
+          <li><p> Cincinnati, OH 45219 </p></li>
+          <li><p><a href="https://maps.google.com/maps?ie=UTF8&cid=4364812893229701306&q=DAAP+-+University+of+Cincinnati&iwloc=A&gl=US&hl=en" target="_blank"> map and directions </a></p></li>
+        </ul>
+
+      </div><!--End of show information-->
+    </header>
+
+
+    <div id="sticky">
+      <nav class="btns row">
+        <h4><a href="index.html"> PROJECTS </a></h4>
+        <h4><a href="yearbook.html"> YEARBOOK </a></h4>
+        <h4><a href="#" class="active"> ABOUT US </a></h4>
+      </nav>
+
+    </div><!--End Sticky-->
+
+    <div class="row">
+
+      <img src="images/timeline.jpg"/>
+
+    </div>
+
+
+
+
+
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+ 
+      //Calculate the height of <header>
+      //Use outerHeight() instead of height() if have padding
+      var aboveHeight = $('.header').outerHeight();
+
+      //when scroll
+      $(window).scroll(function(){
+
+        //if scrolled down more than the header’s height
+        if ($(window).scrollTop() > aboveHeight){
+
+        // if yes, add “fixed” class to the <nav>
+        // add padding top to the #content 
+        //(value is same as the height of the nav)
+        $('#sticky').addClass('fixed').css('top','0').next()
+        .css('padding-top','82px');
+
+        } else {
+
+        // when scroll up or less than aboveHeight,
+        //remove the “fixed” class, and the padding-top
+        $('#sticky').removeClass('fixed').next()
+        .css('padding-top','0');
+        }
+      });
+    });
+  </script>
+</html>
