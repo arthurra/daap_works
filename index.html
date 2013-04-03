@@ -27,6 +27,17 @@
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+    <script>
+      if (document.location.search.indexOf("skipmobile") >= 0) {
+      document.cookie = "skipmobile=1";
+      }
+      else if ((document.location.hostname.match(/\.mobi$/) || screen.width < 699)
+      && document.cookie.indexOf("skipmobile") == -1)
+      {
+      document.location = "mobile/";
+      }
+    </script>
   
 
 </head>
