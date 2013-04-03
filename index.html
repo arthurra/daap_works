@@ -27,50 +27,15 @@
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
-
-    <script>
-      if (document.location.search.indexOf("skipmobile") >= 0) {
-      document.cookie = "skipmobile=1";
-      }
-      else if ((document.location.hostname.match(/\.mobi$/) || screen.width < 699)
-      && document.cookie.indexOf("skipmobile") == -1)
-      {
-      document.location = "mobile/";
-      }
-    </script>
-
-
-
-
-
-   
-
-
-
-
-
-   
-
   
 
 </head>
   <body>
     <header class="header">
       <div id="kaleidoscope">
-        <img id="ring1" alt="ring" src="images/ring-png/ring_01.png"/>
-        <img id="ring2" alt="ring" src="images/ring-png/ring_02.png"/>
-        <img id="ring3" alt="ring" src="images/ring-png/ring_03.png"/>
-        <img id="ring4" alt="ring" src="images/ring-png/ring_04.png"/>
-        <img id="ring5" alt="ring" src="images/ring-png/ring_05.png"/>
-        <img id="ring6" alt="ring" src="images/ring-png/ring_06.png"/>
-        <img id="ring7" alt="ring" src="images/ring-png/ring_07.png"/>
-        <img id="ring8" alt="ring" src="images/ring-png/ring_08.png"/>
-        <img id="ring9" alt="ring" src="images/ring-png/ring_09.png"/>
-        <img id="ring10" alt="ring" src="images/ring-png/ring_10.png"/>
-        <img id="ring11" alt="ring" src="images/ring-png/ring_11.png"/>
-        <img id="ring12" alt="ring" src="images/ring-png/ring_12.png"/>
-        <img id="ring13" alt="ring" src="images/ring-png/ring_13.png"/>
-        <img id="ring14" alt="ring" src="images/ring-png/ring_14.png"/>
+        <img id="ring1" alt="ring" src="images/red.png"/>
+        <img id="ring2" alt="ring" src="images/green.png"/>
+        <img id="ring3" alt="ring" src="images/blue.png"/>
       </div>
 
       <div class="row">
@@ -101,7 +66,7 @@
         <nav class="btns row">
           <h4><a href="#" class="active"> PROJECTS </a></h4>
           <h4><a href="yearbook.html"> YEARBOOK </a></h4>
-          <h4><a href="#"> ABOUT US </a></h4>
+          <h4><a href="about.html"> ABOUT US </a></h4>
         </nav>
 
         <nav class="filter row">
@@ -1512,17 +1477,11 @@
     </footer>
 
 
-  <!-- <script type="text/javascript">
+  <script type="text/javascript">
     var img1 = $('#ring1');
     var img2 = $('#ring2');
     var img3 = $('#ring3');
-    var img5 = $('#ring5');
-    var img6 = $('#ring6');
-    var img8 = $('#ring8');
-    var img9 = $('#ring9');
-    var img10 = $('#ring10');
-    var img12 = $('#ring12');
-    var img14 = $('#ring14');
+  
     if(img1.length > 0){
       var offset = img1.offset();
       var offset2 = img2.offset();
@@ -1552,44 +1511,10 @@
         img3.css('-o-transform', 'rotate('+degree3+'deg)');
         img3.css('-ms-transform', 'rotate('+degree3+'deg)');
 
-        img5.css('-moz-transform', 'rotate('+degree4+'deg)');
-        img5.css('-webkit-transform', 'rotate('+degree4+'deg)');
-        img5.css('-o-transform', 'rotate('+degree4+'deg)');
-        img5.css('-ms-transform', 'rotate('+degree4+'deg)');
-
-        img6.css('-moz-transform', 'rotate('+degree5+'deg)');
-        img6.css('-webkit-transform', 'rotate('+degree5+'deg)');
-        img6.css('-o-transform', 'rotate('+degree5+'deg)');
-        img6.css('-ms-transform', 'rotate('+degree5+'deg)');
-
-        img8.css('-moz-transform', 'rotate('+degree+'deg)');
-        img8.css('-webkit-transform', 'rotate('+degree+'deg)');
-        img8.css('-o-transform', 'rotate('+degree+'deg)');
-        img8.css('-ms-transform', 'rotate('+degree+'deg)');
-
-        img9.css('-moz-transform', 'rotate('+degree2+'deg)');
-        img9.css('-webkit-transform', 'rotate('+degree2+'deg)');
-        img9.css('-o-transform', 'rotate('+degree2+'deg)');
-        img9.css('-ms-transform', 'rotate('+degree2+'deg)');
-
-        img10.css('-moz-transform', 'rotate('+degree3+'deg)');
-        img10.css('-webkit-transform', 'rotate('+degree3+'deg)');
-        img10.css('-o-transform', 'rotate('+degree3+'deg)');
-        img10.css('-ms-transform', 'rotate('+degree3+'deg)');
-
-        img12.css('-moz-transform', 'rotate('+degree4+'deg)');
-        img12.css('-webkit-transform', 'rotate('+degree4+'deg)');
-        img12.css('-o-transform', 'rotate('+degree4+'deg)');
-        img12.css('-ms-transform', 'rotate('+degree4+'deg)');
-
-        img14.css('-moz-transform', 'rotate('+degree5+'deg)');
-        img14.css('-webkit-transform', 'rotate('+degree5+'deg)');
-        img14.css('-o-transform', 'rotate('+degree5+'deg)');
-        img14.css('-ms-transform', 'rotate('+degree5+'deg)');
       }
       $(document).mousemove(mouse);
     }
-  </script> -->
+  </script>
 
   <script type="text/javascript">
     $(document).ready(function() {
