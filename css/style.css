@@ -2,13 +2,14 @@
 /*             =GLOBAL           */
 /*-------------------------------*/
 *{
+  box-sizing: border-box;
   font-family: "Lato", Helvetica Neue, sans-serif !important;
   font-style: normal;
   color: #404041 !important;
 }
 
-*{
-  box-sizing: border-box;
+.super-container {
+  min-width: 1020px;
 }
 
 ul {
